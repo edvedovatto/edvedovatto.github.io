@@ -24,7 +24,7 @@ main:focus{outline:none}
 .skip:focus{top:var(--s);color:#111}
 
 nav{display:flex;align-items:flex-start;gap:var(--s);padding:var(--s) 0;font-size:15px}
-.menu{display:flex;flex-wrap:wrap;flex:1;min-width:0;gap:0 20px}
+.menu{display:flex;flex:1;min-width:0;gap:0 20px}
 nav a{display:block;color:var(--muted);padding:8px 0;line-height:24px;white-space:nowrap}
 nav a:hover{color:var(--accent)}
 .lang{display:flex;flex:none;margin:3px 0 0 auto;border:1px solid var(--line)}
@@ -88,9 +88,9 @@ h2+.project{margin-top:0}
 footer p{margin:0;padding:var(--block) 0 var(--m)}
 
 @media (max-width:700px){
-  nav{font-size:14px}
-  .menu{gap:0 14px}
-  .lang button{padding:0 9px}
+  nav{gap:10px;font-size:clamp(10px,calc((100vw - 100px)/22),14px)}
+  .menu{gap:0 .7em}
+  .lang button{padding:0 6px;font-size:12px}
   .eyebrow span{display:block}
   .eyebrow span+span::before{content:none}
   .facts{display:grid;gap:2px}
@@ -103,10 +103,4 @@ footer p{margin:0;padding:var(--block) 0 var(--m)}
   .links{display:grid;grid-template-columns:1fr 1fr;gap:0 var(--s)}
   .skills div{grid-template-columns:1fr;gap:0}
   .photo{width:96px;height:96px;margin-right:var(--s)}
-}
-@media (max-width:460px){
-  .menu{display:none}
-}
-@media (max-width:380px){
-  .lang button{padding:0 7px}
 }
