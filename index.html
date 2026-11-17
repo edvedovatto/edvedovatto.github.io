@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduardo Vedovatto | Senior QA Engineer</title>
+  <meta name="description" content="Eduardo Vedovatto - Senior QA Engineer. 10+ years in QA across fintech, payments and automotive: web and API test automation in CI and AI applied to QA.">
+  <link rel="canonical" href="https://edvedovatto.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://edvedovatto.github.io/">
+  <meta property="og:title" content="Eduardo Vedovatto | Senior QA Engineer">
+  <meta property="og:description" content="10+ years in QA across fintech, payments and automotive. Two projects: web + API (Playwright, REST Assured) and my own Android app tested with Appium.">
+  <meta property="og:image" content="https://edvedovatto.github.io/assets/foto.jpg">
+  <meta property="og:image:width" content="480">
+  <meta property="og:image:height" content="480">
+  <meta name="theme-color" content="#121110">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121110'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='15' font-weight='700' text-anchor='middle' fill='%23e0703a'%3EEV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <header>
+    <nav>
+      <a href="#projetos" data-i18n="nav_projects">Projects</a>
+      <a href="#experiencia" data-i18n="nav_exp">Experience</a>
+      <a href="#sobre" data-i18n="nav_about">About</a>
+      <a href="#contato" data-i18n="nav_contact">Contact</a>
+      <span class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      </span>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero">
+      <p class="eyebrow"><span data-i18n="role">Senior QA Engineer</span> <span data-i18n="focus">Test Automation · AI-Driven QA</span></p>
+      <h1>Eduardo Vedovatto</h1>
+      <p class="lead" data-i18n="lead">10+ years in QA across fintech, payments and automotive. Web and API automation in CI (Playwright, Cypress, Java + REST Assured), AI applied to QA with human review, and a hands-on exploratory eye for what automation misses.</p>
+      <ul class="facts">
+        <li class="open" data-i18n="f_open">Open to work</li>
+        <li data-i18n="f_remote">Remote, Porto Alegre, Brazil (UTC-3)</li>
+        <li>ISTQB CTFL</li>
+        <li data-i18n="f_english">English C2</li>
+      </ul>
+      <p class="buttons">
+        <a class="btn cv-link" href="assets/resume-en.pdf" target="_blank" rel="noopener" data-i18n="cta_cv">Resume (PDF) ↗</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/vedovatto" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn ghost" href="https://github.com/edvedovatto" target="_blank" rel="noopener">GitHub ↗</a>
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2 data-i18n="h_projects">Projects</h2>
+
+      <article class="project">
+        <p class="tag" data-i18n="setslip_kind">Mobile · Android</p>
+        <h3 data-i18n="setslip_title">Setslip: my own Android app, tested end to end</h3>
+        <p data-i18n="setslip_desc">An app that builds workout sheets and "prints" each one on a thermal printer drawn on screen. I built it AI-driven with automation in mind: it was designed to be testable from day one.</p>
+        <div class="shots">
+          <img src="assets/setslip-slip.jpg" width="360" height="780" loading="lazy" data-i18n-alt="shot_slip" alt="Setslip screen: a printed back and triceps sheet, 0 of 5 exercises done, with the muscle group buttons below">
+          <img src="assets/setslip-checked.jpg" width="360" height="780" loading="lazy" data-i18n-alt="shot_checked" alt="Back and triceps sheet with 2 of 5 exercises checked off">
+        </div>
+        <ul class="points">
+          <li data-i18n="setslip_b1">The app exposes stable IDs and the screen state: tests wait for outcomes, not fixed delays. No XPath, no Thread.sleep.</li>
+          <li data-i18n="setslip_b2">Every scenario starts from a clean app without opening a new Appium session. Failures come with a screenshot, view hierarchy, logcat and video.</li>
+          <li data-i18n="setslip_b3">Accessibility tested: 48dp touch targets, content descriptions and screen reader announcements.</li>
+        </ul>
+        <dl class="nums">
+          <div><dt data-i18n="n_scen">E2E scenarios (Gherkin)</dt><dd>52</dd></div>
+          <div><dt data-i18n="n_unit">unit tests</dt><dd>34</dd></div>
+          <div><dt data-i18n="n_emu">emulator in CI</dt><dd>API 36</dd></div>
+          <div><dt data-i18n="n_ci2">smoke in CI</dt><dd data-i18n="n_ci2_v">every night</dd></div>
+        </dl>
+        <p class="stack">Appium 3 · UiAutomator2 · Cucumber · Java 17 · Kotlin · Jetpack Compose · GitHub Actions</p>
+        <p class="links">
+          <a href="https://github.com/edvedovatto/setslip" target="_blank" rel="noopener" data-i18n="l_repo">Repository ↗</a>
+          <a href="https://github.com/edvedovatto/setslip#how-the-suite-is-organised" target="_blank" rel="noopener" data-i18n="l_decisions">Suite decisions ↗</a>
+          <a href="https://github.com/edvedovatto/setslip/tree/main/e2e-appium/src/test/resources/features" target="_blank" rel="noopener" data-i18n="l_features">Scenarios ↗</a>
+          <a href="https://github.com/edvedovatto/setslip/actions" target="_blank" rel="noopener" data-i18n="l_ci">CI runs ↗</a>
+          <a href="https://github.com/edvedovatto/setslip/releases/tag/v0.1.0" target="_blank" rel="noopener" data-i18n="l_apk">Download the APK ↗</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <p class="tag" data-i18n="juice_kind">Web + API</p>
+        <h3 data-i18n="juice_title">Juice Shop: one shop, tested through the UI and the API</h3>
+        <p data-i18n="juice_desc">Automated tests for OWASP Juice Shop, an online shop built with flaws on purpose, showing what belongs in the UI and what belongs in the API.</p>
+        <ul class="points">
+          <li data-i18n="juice_b1">UI tests cover only what the UI alone can show: error messages, redirects and the purchase end to end. Business rules, permissions and contracts live in the API tests.</li>
+          <li data-i18n="juice_b2">Every test creates its own user through the API (checkout tests also create the address and card). Main responses checked against JSON schemas, plus 400, 401, 404 and broken access control (one user reading or deleting another user's data, IDOR).</li>
+          <li data-i18n="juice_b3">The app's built-in bugs became 13 tests of the correct behavior. They run in a separate CI pass that doesn't block the build and flags any that get fixed. Accessibility checked with axe (WCAG 2.1 AA).</li>
+        </ul>
+        <dl class="nums">
+          <div><dt data-i18n="n_ui">UI tests</dt><dd>25</dd></div>
+          <div><dt data-i18n="n_api">API tests</dt><dd>35</dd></div>
+          <div><dt data-i18n="n_bugs">known-issue tests</dt><dd>13</dd></div>
+          <div><dt data-i18n="n_ci1">regression in CI</dt><dd>~1 min</dd></div>
+        </dl>
+        <p class="stack">Playwright · TypeScript · Gherkin (playwright-bdd) · REST Assured · Java 17 · axe · GitHub Actions · Docker</p>
+        <p class="links">
+          <a href="https://github.com/edvedovatto/qa-automation-portfolio" target="_blank" rel="noopener" data-i18n="l_repo">Repository ↗</a>
+          <a href="https://github.com/edvedovatto/qa-automation-portfolio#strategy" target="_blank" rel="noopener" data-i18n="l_strategy">Strategy ↗</a>
+          <a href="https://github.com/edvedovatto/qa-automation-portfolio#bugs-the-suite-exposes" target="_blank" rel="noopener" data-i18n="l_bugs">Bugs the suite exposes ↗</a>
+          <a href="https://github.com/edvedovatto/qa-automation-portfolio/actions" target="_blank" rel="noopener" data-i18n="l_ci">CI runs ↗</a>
+          <a href="https://edvedovatto.github.io/qa-automation-portfolio/" target="_blank" rel="noopener" data-i18n="l_report">Latest test report ↗</a>
+        </p>
+      </article>
+
+      <p class="sig" data-i18n="sig">In both projects, a bug found becomes a test of the correct behavior, tagged as a known issue. Those tests run in a separate pass: they don't block the build and flag when the bug gets fixed.</p>
+    </section>
+
+    <section id="experiencia">
+      <h2 data-i18n="h_exp">Experience</h2>
+      <ol class="jobs">
+        <li>
+          <p class="when" data-i18n="j1_when">Apr 2026 - Sep 2026</p>
+          <div>
+            <h3>Trustly</h3>
+            <p class="role" data-i18n="j1_role">QA Engineer</p>
+            <p data-i18n="j1_ctx">Global payments fintech. Built custom Claude Code skills for day-to-day QA (daily ticket briefing, documentation analysis, Jira-based shift-left monitoring) and, after finding about 84% of the documentation had not been updated in over two years, a solution that suggests updates with each delivery. Extended the Java automation (Selenium, REST Assured + JUnit) and did hands-on manual testing, including mobile validation on iOS and Android.</p>
+          </div>
+        </li>
+        <li>
+          <p class="when" data-i18n="j2_when">Oct 2025 - Mar 2026</p>
+          <div>
+            <h3>GOW</h3>
+            <p class="role" data-i18n="j2_role">Senior QA Engineer · contractor</p>
+            <p data-i18n="j2_ctx">Built automation from scratch with Playwright (Page Object), integrated into CI/CD on Azure DevOps, across several projects including a US fintech. APIs automated with Java + REST Assured or Postman, depending on the project. Structured the core layers in about three weeks and used Playwright MCP to map the system and generate tests from its flows, reviewing all AI output.</p>
+          </div>
+        </li>
+        <li>
+          <p class="when" data-i18n="j3_when">Jan 2023 - Jun 2025</p>
+          <div>
+            <h3>Zallpy Digital</h3>
+            <p class="role" data-i18n="j3_role">Senior QA Engineer</p>
+            <p data-i18n="j3_ctx">Americas project (TicketLog). Automated test-data generation via API, cutting preparation time by about 70%; introduced a Definition of Done and systematic defect analysis (about 80% of issues were frontend). Also led the project's QA team of five.</p>
+          </div>
+        </li>
+        <li>
+          <p class="when" data-i18n="j4_when">Jun 2022 - Sep 2022</p>
+          <div>
+            <h3>Reclame Aqui</h3>
+            <p class="role" data-i18n="j4_role">QA Engineer</p>
+            <p data-i18n="j4_ctx">Functional and API testing with Postman, with SQL data validation.</p>
+          </div>
+        </li>
+        <li>
+          <p class="when" data-i18n="j5_when">Feb 2016 - May 2022</p>
+          <div>
+            <h3>Zallpy Digital</h3>
+            <p class="role" data-i18n="j5_role">QA Engineer and Junior Developer</p>
+            <p data-i18n="j5_ctx">Clients included BMW Group, TicketLog and ADP Brasil (ERP): test plans, regression, UI automation with Robot Framework and API testing with Postman/Newman.</p>
+          </div>
+        </li>
+      </ol>
+
+      <dl class="extras">
+        <div>
+          <dt data-i18n="h_cert">Certification</dt>
+          <dd>ISTQB CTFL <span data-i18n="cert_v">(Certified Tester Foundation Level), 2018</span></dd>
+        </div>
+        <div>
+          <dt data-i18n="h_lang">Languages</dt>
+          <dd data-i18n="lang_v">Portuguese (native) · English C2 (EF SET 95/100)</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="sobre">
+      <h2 data-i18n="h_about">About</h2>
+      <div class="about">
+        <img class="photo" src="assets/foto.jpg" width="160" height="160" alt="Eduardo Vedovatto" loading="lazy">
+        <div>
+          <p data-i18n="about_p1">I work across the whole quality lifecycle on Brazilian and global projects: refinement and acceptance criteria, test planning, Definition of Done and shift-left.</p>
+          <p data-i18n="about_p2">I automate web and APIs integrated into CI/CD, with defect analysis and quality indicators to guide the team. I use AI in the QA workflow to map systems, generate tests and analyze incoming work, and I review everything it produces.</p>
+        </div>
+      </div>
+      <h3 data-i18n="h_cases">How I work</h3>
+      <ul class="points">
+        <li data-i18n="c1">A bug that only showed up on slow connections: I throttled the network in the browser, found two dependent requests finishing out of order, and gave developers exact repro steps.</li>
+        <li data-i18n="c2">Test data was the bottleneck on TicketLog (different rules per country): generating it through the API cut preparation time by about 70%, first for developers, then for QA.</li>
+        <li data-i18n="c3">Defects were found too late: analysis showed about 80% came from the frontend, so I introduced a Definition of Done, checklists and workshops to prevent them at the source.</li>
+      </ul>
+      <h3 data-i18n="h_work">What I test</h3>
+      <ul class="grid">
+        <li><b data-i18n="w1_t">Fintech and payments</b> <span data-i18n="w1">End-to-end testing at a global payments fintech, including manual mobile validation on iOS and Android (TestFlight, BrowserStack), and automation at a US fintech.</span></li>
+        <li><b data-i18n="w2_t">Defect analysis</b> <span data-i18n="w2">Finding where bugs come from and driving prevention with the dev team.</span></li>
+        <li><b data-i18n="w3_t">Integrations and APIs</b> <span data-i18n="w3">REST APIs automated with Java + REST Assured and JUnit running in the pipeline; status codes, payloads, errors and negative cases. Test data generated through the API (TicketLog).</span></li>
+        <li><b data-i18n="w4_t">Process</b> <span data-i18n="w4">Acceptance criteria during refinement, Definition of Done and testing from the start (shift-left).</span></li>
+        <li><b data-i18n="w5_t">Manual and exploratory testing</b> <span data-i18n="w5">Every feature gets checked by hand first; whatever needs frequent validation or can't break goes into automation.</span></li>
+      </ul>
+      <h3 data-i18n="h_skills">Tools</h3>
+      <dl class="skills">
+        <div><dt data-i18n="s1_t">Automation</dt><dd>Playwright, Cypress, Selenium, Robot Framework, Gherkin, JMeter</dd></div>
+        <div><dt>API</dt><dd data-i18n="s2">Java + REST Assured + JUnit (in CI/CD) · Postman/Newman, Bruno</dd></div>
+        <div><dt>CI/CD</dt><dd>GitHub Actions, Azure DevOps, Docker, Git</dd></div>
+        <div><dt data-i18n="s6_t">Test management</dt><dd>Jira, Zephyr</dd></div>
+        <div><dt data-i18n="s4_t">AI in QA</dt><dd data-i18n="s4">Claude Code (custom skills), GitHub Copilot, Playwright MCP, AI agent workflows</dd></div>
+        <div><dt data-i18n="s5_t">Languages</dt><dd>JavaScript, Java, SQL</dd></div>
+        <div><dt data-i18n="s7_t">Personal projects (GitHub)</dt><dd>Appium, Cucumber, TypeScript</dd></div>
+      </dl>
+    </section>
+
+    <section id="contato">
+      <h2 data-i18n="h_contact">Contact</h2>
+      <p data-i18n="contact_lead">Open to remote Senior QA Engineer, QA Automation and SDET roles.</p>
+      <p class="stack" data-i18n="regime">Remote · contractor or full-time · US and European time-zone overlap</p>
+      <p class="buttons">
+        <a class="btn email" href="mailto:ed.vedovatto@gmail.com" data-email="ed.vedovatto@gmail.com" aria-live="polite">ed.vedovatto@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/vedovatto" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn ghost" href="https://github.com/edvedovatto" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/vedovatto/details/recommendations/" target="_blank" rel="noopener" data-i18n="l_recs">LinkedIn recommendations ↗</a>
+      </p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Eduardo Vedovatto</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
