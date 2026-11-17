@@ -2,11 +2,13 @@ const T = {
   pt: {
     title: "Eduardo Vedovatto | Senior QA Engineer",
     meta: "Eduardo Vedovatto - Senior QA Engineer. Mais de 10 anos em QA, em fintech, pagamentos e automotivo: automação de testes web e API no pipeline e IA aplicada a QA.",
+    cv_href: "assets/curriculo-pt.pdf",
     skip: "Pular para o conteúdo",
     nav_projects: "Projetos", nav_exp: "Experiência", nav_skills: "Ferramentas", nav_contact: "Contato",
     role: "Senior QA Engineer", focus: "Test Automation · AI-Driven QA",
     lead: "Mais de 10 anos em QA, em fintech, pagamentos e automotivo. Automação web e API no pipeline (Playwright, Cypress, Java + REST Assured), IA aplicada a QA e um olhar de teste manual e exploratório para o que a automação não pega.",
     f_open: "Disponível para vagas", f_remote: "Remoto, Porto Alegre, Brasil (UTC-3)", f_english: "Inglês C2",
+    cta_cv: "Currículo ↗",
     h_projects: "Projetos",
     setslip_kind: "Mobile · Android",
     setslip_title: "Setslip: um app Android meu, com testes de ponta a ponta",
@@ -29,7 +31,7 @@ const T = {
     sig: "Nos dois projetos, bug encontrado vira teste do comportamento certo, marcado como problema conhecido. Esses testes rodam numa passada à parte: não travam o build e avisam quando o bug é corrigido.",
     h_exp: "Experiência",
     j1_when: "abr 2026 - set 2026", j1_role: "QA Engineer",
-    j1_ctx: "Fintech global de pagamentos. Criei skills customizadas do Claude Code para a rotina de QA (briefing diário, análise de documentação, monitoramento de shift-left via Jira) e, ao ver que cerca de 84% da documentação estava desatualizada havia mais de dois anos, uma solução que sugere a atualização a cada entrega. Evoluí a automação em Java (Selenium, REST Assured + JUnit) e fiz testes manuais, inclusive validação mobile em iOS e Android.",
+    j1_ctx: "Fintech global de pagamentos. Criei skills customizadas do Claude Code para a rotina de QA (briefing diário, análise de documentação, monitoramento de shift-left via Jira) e, ao ver que cerca de 84% da documentação estava desatualizada havia mais de dois anos, criei uma solução que sugere a atualização a cada entrega. Evoluí a automação em Java (Selenium, REST Assured + JUnit) e fiz testes manuais, inclusive validação mobile em iOS e Android.",
     j2_when: "out 2025 - mar 2026", j2_role: "Senior QA Engineer · PJ",
     j2_ctx: "Automação do zero com Playwright (Page Object) integrada a CI/CD no Azure DevOps, em diferentes projetos, incluindo uma fintech dos EUA. APIs automatizadas com Java + REST Assured ou Postman, conforme o projeto. Estruturei as camadas principais em cerca de três semanas e usei Playwright MCP para mapear o sistema e gerar testes a partir dos fluxos, revisando tudo que a IA gerou.",
     j3_when: "jan 2023 - jun 2025", j3_role: "Senior QA Engineer",
@@ -41,7 +43,7 @@ const T = {
     h_cert: "Certificação", cert_v: "(Certified Tester Foundation Level), 2018",
     h_lang: "Idiomas", lang_v: "Português nativo · Inglês C2 (EF SET 95/100)",
     h_cases: "Como eu trabalho",
-    bio: "Atuo na qualidade de ponta a ponta, em projetos nacionais e globais: refinamento e critérios de aceite, planejamento de testes, Definition of Done e shift-left. Automatizo web e APIs integrado a CI/CD e uso IA no fluxo de QA para mapear sistemas, gerar testes e analisar demandas.",
+    bio: "Atuo na qualidade de ponta a ponta, em projetos nacionais e globais: refinamento e critérios de aceite, planejamento de testes, Definition of Done e shift-left. Automatizo web e APIs com integração a CI/CD e uso IA no fluxo de QA para mapear sistemas, gerar testes e analisar demandas.",
     c1: "Bug que só acontecia com internet lenta: limitei a rede no navegador, vi duas requisições dependentes terminando fora de ordem e entreguei aos devs os passos exatos para reproduzir.",
     c2: "Massa de teste era o gargalo do TicketLog (regras diferentes por país): gerar os dados via API cortou cerca de 70% do tempo de preparação, primeiro para os devs, depois para o QA.",
     c3: "Defeito chegando tarde: a análise mostrou que cerca de 80% vinham do frontend; com Definition of Done, checklists e workshops, a prevenção foi para onde o problema nascia.",
@@ -57,11 +59,13 @@ const T = {
   en: {
     title: "Eduardo Vedovatto | Senior QA Engineer",
     meta: "Eduardo Vedovatto - Senior QA Engineer. 10+ years in QA across fintech, payments and automotive: web and API test automation in CI and AI applied to QA.",
+    cv_href: "assets/resume-en.pdf",
     skip: "Skip to content",
     nav_projects: "Projects", nav_exp: "Experience", nav_skills: "Skills", nav_contact: "Contact",
     role: "Senior QA Engineer", focus: "Test Automation · AI-Driven QA",
     lead: "10+ years in QA across fintech, payments and automotive. Web and API automation in CI (Playwright, Cypress, Java + REST Assured), AI applied to QA, and a hands-on exploratory eye for what automation misses.",
     f_open: "Open to work", f_remote: "Remote, Porto Alegre, Brazil (UTC-3)", f_english: "English C2",
+    cta_cv: "Resume ↗",
     h_projects: "Projects",
     setslip_kind: "Mobile · Android",
     setslip_title: "Setslip: my own Android app, tested end to end",
@@ -84,7 +88,7 @@ const T = {
     sig: "In both projects, a bug found becomes a test of the correct behavior, tagged as a known issue. Those tests run in a separate pass: they don't block the build and flag when the bug gets fixed.",
     h_exp: "Experience",
     j1_when: "Apr 2026 - Sep 2026", j1_role: "QA Engineer",
-    j1_ctx: "Global payments fintech. Built custom Claude Code skills for day-to-day QA (daily ticket briefing, documentation analysis, Jira-based shift-left monitoring) and, after finding about 84% of the documentation had not been updated in over two years, a solution that suggests updates with each delivery. Extended the Java automation (Selenium, REST Assured + JUnit) and did hands-on manual testing, including mobile validation on iOS and Android.",
+    j1_ctx: "Global payments fintech. Built custom Claude Code skills for day-to-day QA (daily ticket briefing, documentation analysis, Jira-based shift-left monitoring) and, after finding about 84% of the documentation had not been updated in over two years, built a solution that suggests updates with each delivery. Extended the Java automation (Selenium, REST Assured + JUnit) and did hands-on manual testing, including mobile validation on iOS and Android.",
     j2_when: "Oct 2025 - Mar 2026", j2_role: "Senior QA Engineer · contractor",
     j2_ctx: "Built automation from scratch with Playwright (Page Object), integrated into CI/CD on Azure DevOps, across several projects including a US fintech. APIs automated with Java + REST Assured or Postman, depending on the project. Structured the core layers in about three weeks and used Playwright MCP to map the system and generate tests from its flows, reviewing all AI output.",
     j3_when: "Jan 2023 - Jun 2025", j3_role: "Senior QA Engineer",
@@ -118,6 +122,7 @@ function setLang(lang) {
   document.querySelector('meta[name="description"]').content = t.meta;
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t[el.dataset.i18n]; });
   document.querySelectorAll("[data-i18n-alt]").forEach(img => { img.alt = t[img.dataset.i18nAlt]; });
+  document.querySelectorAll(".cv-link").forEach(a => { a.href = t.cv_href; });
   document.querySelectorAll("[data-lang]").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
   try { localStorage.setItem("lang", lang); } catch {}
 }
