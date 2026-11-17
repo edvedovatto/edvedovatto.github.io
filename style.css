@@ -27,7 +27,7 @@ nav{display:flex;align-items:flex-start;gap:var(--s);padding:var(--s) 0;font-siz
 .menu{display:flex;flex-wrap:wrap;flex:1;min-width:0;gap:0 20px}
 nav a{display:block;color:var(--muted);padding:8px 0;line-height:24px;white-space:nowrap}
 nav a:hover{color:var(--accent)}
-.lang{display:flex;flex:none;margin-top:3px;border:1px solid var(--line)}
+.lang{display:flex;flex:none;margin:3px 0 0 auto;border:1px solid var(--line)}
 .lang button{height:32px;background:none;border:0;color:var(--muted);font:700 13px/1 var(--body);padding:0 11px;cursor:pointer}
 .lang button[aria-pressed="true"]{background:var(--accent);color:#111}
 
@@ -104,8 +104,9 @@ footer p{margin:0;padding:var(--block) 0 var(--m)}
   .skills div{grid-template-columns:1fr;gap:0}
   .photo{width:96px;height:96px;margin-right:var(--s)}
 }
+@media (max-width:460px){
+  .menu{display:none}
+}
 @media (max-width:380px){
-  nav{font-size:13px}
-  .menu{gap:0 10px}
   .lang button{padding:0 7px}
 }
