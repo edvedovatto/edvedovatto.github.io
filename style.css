@@ -77,16 +77,12 @@ h2+.project{margin-top:0}
 .links{display:flex;flex-wrap:wrap;gap:0 20px;font-weight:700;margin:0}
 .links a{padding:6px 0}
 
-.about{display:grid;grid-template-columns:160px 1fr;gap:var(--m);align-items:start;margin-bottom:var(--block)}
+.about{display:grid;grid-template-columns:160px 1fr;gap:var(--m);align-items:start;margin-bottom:var(--m)}
 .photo{width:160px;height:160px;object-fit:cover}
-.about p:last-child{margin-bottom:0}
-#sobre h3{margin-bottom:var(--s)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--m)}
-.grid li b{display:block}
-.skills{display:grid;gap:8px}
+.about p{margin:0}
+.skills{display:grid;gap:8px;margin:0}
 .skills div{display:grid;grid-template-columns:10rem 1fr;gap:var(--s)}
 .skills dt{color:var(--text);font-weight:700}
-#sobre ul+h3{margin-top:var(--block)}
 
 footer p{margin:0;padding:var(--block) 0 var(--m)}
 
@@ -98,9 +94,9 @@ footer p{margin:0;padding:var(--block) 0 var(--m)}
   .facts{display:grid;gap:2px}
   .facts li:not(:last-child)::after{content:none}
   .buttons{display:grid;grid-template-columns:1fr 1fr}
-  .buttons .btn:first-child,.buttons .btn:nth-child(even):last-child{grid-column:1/-1}
+  #contato .btn:first-child,#contato .btn:last-child{grid-column:1/-1}
   .jobs li{grid-template-columns:1fr}
-  .extras,.grid{grid-template-columns:1fr}
+  .extras{grid-template-columns:1fr}
   .nums{grid-template-columns:1fr 1fr}
   .links{display:grid;grid-template-columns:1fr 1fr;gap:0 var(--s)}
   .about{grid-template-columns:1fr;gap:var(--s)}

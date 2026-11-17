@@ -26,7 +26,7 @@
     <nav>
       <a href="#projetos" data-i18n="nav_projects">Projects</a>
       <a href="#experiencia" data-i18n="nav_exp">Experience</a>
-      <a href="#sobre" data-i18n="nav_about">About</a>
+      <a href="#ferramentas" data-i18n="nav_skills">Skills</a>
       <a href="#contato" data-i18n="nav_contact">Contact</a>
       <span class="lang" role="group" aria-label="Idioma / Language">
         <button type="button" data-lang="pt" aria-pressed="false">PT</button>
@@ -39,7 +39,7 @@
     <section class="hero">
       <p class="eyebrow"><span data-i18n="role">Senior QA Engineer</span> <span data-i18n="focus">Test Automation · AI-Driven QA</span></p>
       <h1>Eduardo Vedovatto</h1>
-      <p class="lead" data-i18n="lead">10+ years in QA across fintech, payments and automotive. Web and API automation in CI (Playwright, Cypress, Java + REST Assured), AI applied to QA with human review, and a hands-on exploratory eye for what automation misses.</p>
+      <p class="lead" data-i18n="lead">10+ years in QA across fintech, payments and automotive. Web and API automation in CI (Playwright, Cypress, Java + REST Assured), AI applied to QA, and a hands-on exploratory eye for what automation misses.</p>
       <ul class="facts">
         <li class="open" data-i18n="f_open">Open to work</li>
         <li data-i18n="f_remote">Remote, Porto Alegre, Brazil (UTC-3)</li>
@@ -47,7 +47,8 @@
         <li data-i18n="f_english">English C2</li>
       </ul>
       <p class="buttons">
-        <a class="btn cv-link" href="assets/resume-en.pdf" target="_blank" rel="noopener" data-i18n="cta_cv">Resume (PDF) ↗</a>
+        <a class="btn" href="assets/curriculo-pt.pdf" target="_blank" rel="noopener" hreflang="pt-BR" lang="pt-BR">Currículo (PT) ↗</a>
+        <a class="btn" href="assets/resume-en.pdf" target="_blank" rel="noopener" hreflang="en" lang="en">Resume (EN) ↗</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/vedovatto" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn ghost" href="https://github.com/edvedovatto" target="_blank" rel="noopener">GitHub ↗</a>
       </p>
@@ -91,8 +92,8 @@
         <p data-i18n="juice_desc">Automated tests for OWASP Juice Shop, an online shop built with flaws on purpose, showing what belongs in the UI and what belongs in the API.</p>
         <ul class="points">
           <li data-i18n="juice_b1">UI tests cover only what the UI alone can show: error messages, redirects and the purchase end to end. Business rules, permissions and contracts live in the API tests.</li>
-          <li data-i18n="juice_b2">Every test creates its own user through the API (checkout tests also create the address and card). Main responses checked against JSON schemas, plus 400, 401, 404 and broken access control (one user reading or deleting another user's data, IDOR).</li>
-          <li data-i18n="juice_b3">The app's built-in bugs became 13 tests of the correct behavior. They run in a separate CI pass that doesn't block the build and flags any that get fixed. Accessibility checked with axe (WCAG 2.1 AA).</li>
+          <li data-i18n="juice_b2">Tests that change data create their own user through the API (checkout tests also create the address and card). Main responses checked against JSON schemas, plus 400, 401, 404 and broken access control (one user reading or deleting another user's data, IDOR).</li>
+          <li data-i18n="juice_b3">The app's built-in bugs became 13 tests of the correct behavior. They run in a separate CI pass that doesn't block the build and flags any that get fixed. Accessibility checked with axe (WCAG 2.1 AA), with exceptions documented in the README.</li>
         </ul>
         <dl class="nums">
           <div><dt data-i18n="n_ui">UI tests</dt><dd>25</dd></div>
@@ -157,7 +158,32 @@
           </div>
         </li>
       </ol>
+    </section>
 
+    <section id="como-trabalho">
+      <h2 data-i18n="h_cases">How I work</h2>
+      <div class="about">
+        <img class="photo" src="assets/foto.jpg" width="160" height="160" alt="Eduardo Vedovatto" loading="lazy">
+        <p data-i18n="bio">I work across the whole quality lifecycle on Brazilian and global projects: refinement and acceptance criteria, test planning, Definition of Done and shift-left. I automate web and APIs integrated into CI/CD and use AI in the QA workflow to map systems, generate tests and analyze incoming work.</p>
+      </div>
+      <ul class="points">
+        <li data-i18n="c1">A bug that only showed up on slow connections: I throttled the network in the browser, found two dependent requests finishing out of order, and gave developers exact repro steps.</li>
+        <li data-i18n="c2">Test data was the bottleneck on TicketLog (different rules per country): generating it through the API cut preparation time by about 70%, first for developers, then for QA.</li>
+        <li data-i18n="c3">Defects were found too late: analysis showed about 80% came from the frontend, so I introduced a Definition of Done, checklists and workshops to prevent them at the source.</li>
+      </ul>
+    </section>
+
+    <section id="ferramentas">
+      <h2 data-i18n="h_skills">Skills</h2>
+      <dl class="skills">
+        <div><dt data-i18n="s1_t">Automation</dt><dd>Playwright, Cypress, Selenium, Robot Framework, Gherkin, JMeter</dd></div>
+        <div><dt>API</dt><dd data-i18n="s2">Java + REST Assured + JUnit (in CI/CD) · Postman/Newman, Bruno</dd></div>
+        <div><dt>CI/CD</dt><dd>GitHub Actions, Azure DevOps, Docker, Git</dd></div>
+        <div><dt data-i18n="s6_t">Test management</dt><dd>Jira, Zephyr</dd></div>
+        <div><dt data-i18n="s4_t">AI in QA</dt><dd data-i18n="s4">Claude Code (custom skills), GitHub Copilot, Playwright MCP, AI agent workflows</dd></div>
+        <div><dt data-i18n="s5_t">Programming languages</dt><dd>JavaScript, Java, SQL</dd></div>
+        <div><dt data-i18n="s7_t">Personal projects (GitHub)</dt><dd>Appium, Cucumber, TypeScript</dd></div>
+      </dl>
       <dl class="extras">
         <div>
           <dt data-i18n="h_cert">Certification</dt>
@@ -167,41 +193,6 @@
           <dt data-i18n="h_lang">Languages</dt>
           <dd data-i18n="lang_v">Portuguese (native) · English C2 (EF SET 95/100)</dd>
         </div>
-      </dl>
-    </section>
-
-    <section id="sobre">
-      <h2 data-i18n="h_about">About</h2>
-      <div class="about">
-        <img class="photo" src="assets/foto.jpg" width="160" height="160" alt="Eduardo Vedovatto" loading="lazy">
-        <div>
-          <p data-i18n="about_p1">I work across the whole quality lifecycle on Brazilian and global projects: refinement and acceptance criteria, test planning, Definition of Done and shift-left.</p>
-          <p data-i18n="about_p2">I automate web and APIs integrated into CI/CD, with defect analysis and quality indicators to guide the team. I use AI in the QA workflow to map systems, generate tests and analyze incoming work, and I review everything it produces.</p>
-        </div>
-      </div>
-      <h3 data-i18n="h_cases">How I work</h3>
-      <ul class="points">
-        <li data-i18n="c1">A bug that only showed up on slow connections: I throttled the network in the browser, found two dependent requests finishing out of order, and gave developers exact repro steps.</li>
-        <li data-i18n="c2">Test data was the bottleneck on TicketLog (different rules per country): generating it through the API cut preparation time by about 70%, first for developers, then for QA.</li>
-        <li data-i18n="c3">Defects were found too late: analysis showed about 80% came from the frontend, so I introduced a Definition of Done, checklists and workshops to prevent them at the source.</li>
-      </ul>
-      <h3 data-i18n="h_work">What I test</h3>
-      <ul class="grid">
-        <li><b data-i18n="w1_t">Fintech and payments</b> <span data-i18n="w1">End-to-end testing at a global payments fintech, including manual mobile validation on iOS and Android (TestFlight, BrowserStack), and automation at a US fintech.</span></li>
-        <li><b data-i18n="w2_t">Defect analysis</b> <span data-i18n="w2">Finding where bugs come from and driving prevention with the dev team.</span></li>
-        <li><b data-i18n="w3_t">Integrations and APIs</b> <span data-i18n="w3">REST APIs automated with Java + REST Assured and JUnit running in the pipeline; status codes, payloads, errors and negative cases. Test data generated through the API (TicketLog).</span></li>
-        <li><b data-i18n="w4_t">Process</b> <span data-i18n="w4">Acceptance criteria during refinement, Definition of Done and testing from the start (shift-left).</span></li>
-        <li><b data-i18n="w5_t">Manual and exploratory testing</b> <span data-i18n="w5">Every feature gets checked by hand first; whatever needs frequent validation or can't break goes into automation.</span></li>
-      </ul>
-      <h3 data-i18n="h_skills">Tools</h3>
-      <dl class="skills">
-        <div><dt data-i18n="s1_t">Automation</dt><dd>Playwright, Cypress, Selenium, Robot Framework, Gherkin, JMeter</dd></div>
-        <div><dt>API</dt><dd data-i18n="s2">Java + REST Assured + JUnit (in CI/CD) · Postman/Newman, Bruno</dd></div>
-        <div><dt>CI/CD</dt><dd>GitHub Actions, Azure DevOps, Docker, Git</dd></div>
-        <div><dt data-i18n="s6_t">Test management</dt><dd>Jira, Zephyr</dd></div>
-        <div><dt data-i18n="s4_t">AI in QA</dt><dd data-i18n="s4">Claude Code (custom skills), GitHub Copilot, Playwright MCP, AI agent workflows</dd></div>
-        <div><dt data-i18n="s5_t">Languages</dt><dd>JavaScript, Java, SQL</dd></div>
-        <div><dt data-i18n="s7_t">Personal projects (GitHub)</dt><dd>Appium, Cucumber, TypeScript</dd></div>
       </dl>
     </section>
 
